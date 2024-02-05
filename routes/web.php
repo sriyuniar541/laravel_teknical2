@@ -24,9 +24,7 @@ Route::get('/', function () {
 // kategori
 Route::prefix('kategori')->group(function () {
     Route::get('/', [KategoriController::class, 'index']);
-    // Route::get('/create', [KategoriController::class, 'create']);
     Route::post('/', [KategoriController::class, 'store']);
-    // Route::get('/{id}/edit', [KategoriController::class, 'edit']);
     Route::put('/{id}', [KategoriController::class, 'update']);
     Route::delete('/{id}/delete', [KategoriController::class, 'destroy']);
 });
@@ -35,9 +33,7 @@ Route::prefix('kategori')->group(function () {
 // coa
 Route::prefix('coa')->group(function () {
     Route::get('/', [CoaController::class, 'index']);
-    // Route::get('/create', [CoaController::class, 'create']);
     Route::post('/', [CoaController::class, 'store']);
-    // Route::get('/{id}/edit', [CoaController::class, 'edit']);
     Route::put('/{id}', [CoaController::class, 'update']);
     Route::delete('/{id}/delete', [CoaController::class, 'destroy']);
 });
@@ -45,9 +41,7 @@ Route::prefix('coa')->group(function () {
 // transaksi
 Route::prefix('transaksi')->group(function () {
     Route::get('/', [TransaksiController::class, 'index']);
-    // Route::get('/create', [TransaksiController::class, 'create']);
     Route::post('/', [TransaksiController::class, 'store']);
-    // Route::get('/{id}/edit', [TransaksiController::class, 'edit']);
     Route::put('/{id}', [TransaksiController::class, 'update']);
     Route::delete('/{id}/delete', [TransaksiController::class, 'destroy']);
 });

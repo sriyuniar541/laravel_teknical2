@@ -1,6 +1,6 @@
 @extends('index') @section('title', 'kategori') @section('content')
 
-{{-- modal tambah status --}}
+{{-- modal tambah kategori --}}
 <div class="d-flex justify-content-end mt-5">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Tambah Kategori
@@ -38,7 +38,7 @@
         </div>
     </div>
 </div>
-{{-- akhir modal tambah status --}}
+{{-- akhir modal tambah kategori --}}
 
 <table class="table mt-5">
     <thead>
@@ -58,10 +58,10 @@
                 <td>
                     <div class="d-flex">
 
-                        {{-- modal update status --}}
+                        {{-- modal update kategori --}}
                         <div class="d-flex justify-content-end">
                             <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-{{$item->id}}">
-                                Update Status
+                                Update kategori
                             </button>
                         </div>
 
@@ -72,7 +72,7 @@
                                         @csrf
                                         @method('PUT')
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Status</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">kategori</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">

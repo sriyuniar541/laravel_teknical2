@@ -62,13 +62,3 @@
 
 @endsection
 
-@push('scripts')
-    <script>
-        $(document).ready(function() {
-            $('#table_laporan').DataTable({
-                dom: 'Bfrtip',
-                buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
-            });
-        });
-    </script>
-@endpush
